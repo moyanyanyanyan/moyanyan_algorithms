@@ -10,7 +10,8 @@
  * @return {ListNode}
  */
 var reverseList = function (head) {
-  let pre = null //这个地方，我一开始pre是定在head的，然后cur是head.next,疯狂报错说我head可能是空的，然后还没处理链表最后一个是null的事情
+  let pre = null //这个地方，我一开始pre是定在head的，然后cur是head.next,疯狂报错说我head可能是空的，
+  // 然后还没处理链表最后一个是null的事情
   let cur = head
   while (cur) {
     //
