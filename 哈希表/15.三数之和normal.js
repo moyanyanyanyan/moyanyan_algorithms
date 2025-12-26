@@ -28,7 +28,7 @@ var threeSum = function (nums) {
     left = i + 1 //i后面的那个元素
     right = nums.length - 1 //最后一个元素
     t = nums[i] + nums[left] + nums[right] //获得三元素之和
-    let leftCheck = new Set()
+    let leftCheck = new Set() //每次i改变之后这个leftCheck都必须清0
     while (left < right) {
       //只要left<right就一直迭代，<0则left++，>0则 right--,只要不break迟早会<
       // 不能用！=会死循环的,血泪教训，同时++--就会死循环
